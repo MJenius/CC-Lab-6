@@ -46,7 +46,7 @@ int main() {
         std::string response = "HTTP/1.1 200 OK\r\n";
         response += "Content-Type: text/plain\r\n";
         response += "Connection: close\r\n\r\n";
-        response += "Final Lab Working - Served by backend: " + std::string(hostname) + "\n";
+        response += "Served by backend: " + std::string(hostname) + "\n";
         
         send(client_fd, response.c_str(), response.length(), 0);
         close(client_fd);
